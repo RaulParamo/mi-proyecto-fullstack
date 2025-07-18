@@ -1,0 +1,47 @@
+/* src/components/AboutTech.css */
+
+.sobre-tech {
+  background-color:  #5078ef;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sobre-tech-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.texto-sobre-tech h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-sobre-tech span {
+  color: #16e763;
+  font-weight: bold;
+}
+
+.texto-sobre-tech p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.imagen-sobre-tech img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media(min-width: 768px) {
+  .sobre-tech-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

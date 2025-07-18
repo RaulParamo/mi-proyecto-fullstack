@@ -1,0 +1,74 @@
+/* src/components/Hero.css */
+
+.hero-container {
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+ 
+  }
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+.texto-header {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .texto-header {
+    text-align: left;
+    padding: 0 2rem;
+  }
+}
+
+.tagline-producto {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.nombre-producto {
+  font-size: 6rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .nombre-producto {
+    font-size: 10rem;
+    line-height: 1;
+  }
+}
+
+.descripcion-producto {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.precio-producto span {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+/* Gradiente verde para TechPRO */
+.degradado-verde {
+  background: linear-gradient(to right, #2355ec, #00b894);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
