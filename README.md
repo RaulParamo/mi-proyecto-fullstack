@@ -20,19 +20,59 @@ Incluye una interfaz atractiva y responsiva y una base de datos en PostgreSQL.
 - **PostgreSQL**: Sistema de base de datos relacional robusto y escalable.
 - **pg (node-postgres)**: Librería para interactuar con PostgreSQL desde Node.js.
 
-## 📁 Estructura del Proyecto
+### 📬 Funcionalidades
+Formulario de contacto con nombre, correo y mensaje.
+
+Validaciones básicas de campos.
+
+Envío de datos al backend vía API.
+
+Persistencia en PostgreSQL.
+
+
+
 
 
 ## 🔒 Seguridad
 
-- Las credenciales de la base de datos y otras variables sensibles están almacenadas en un archivo `.env` que está **excluido del control de versiones** mediante `.gitignore`.
-- Se espera que cada desarrollador cree su propio archivo `.env` local para conectar con PostgreSQL.
+Al ser un pequeño proyecto comparto por aqui los valores para lo conexion
 
 ## 📦 Instalación
 
-### Clona el repositorio
+📋 Prerrequisitos
+Node.js 
+npm 
+PostgreSQL (instalado y corriendo)
+psql -U postgres -h localhost
+Ingresa la contraseña (admin) cuando se solicite
+CREATE DATABASE contact_db
 
-```bash
+
+
+## Clona el repositorio
 git clone https://github.com/RaulParamo/mi-proyecto-fullstack.git
-cd mi-proyecto-fullstack
-cd 
+
+
+
+## Crea un archivo .env en la carpeta backend con este contenido 
+- PORT=5000
+- DB_HOST=localhost
+- DB_USER=postgres
+- DB_PASSWORD=admin
+- DB_NAME=contact_db
+- DB_PORT=5432
+
+
+
+
+## Inicia el proyecto en el backend y frontend
+
+# cd mi-proyecto-fullstack
+- cd backend  
+- npm init -y
+- node index.js
+
+# cd mi-proyecto-fullstack
+- cd frontend 
+- npm install
+- npm run start
